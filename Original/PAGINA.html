@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--IDIOMA DE LA PAGINA-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--LENGUAJE EN UNICODE DE 8 BITS - especificacion del lenguaje en el que esta escrito el programa-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tamaño de la visualizacion de la pagina-->
+    <title>Mi Pagina</title>
+    <!--Titulo de la pagina-->
+    <link rel="stylesheet" href="CSS/Reset.css">
+    <link rel="stylesheet" href="CSS/MiPagina.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi pagina en HTML</h1>
+    </header>
+    <!--HEADER = Bloque de cabecera/titulo-->
+    <nav>
+        <ul>
+            <!--menu-->
+            <li><a href="#">Vinculo 1</a></li>
+            <li><a href="#">Vinculo 2</a></li>
+            <li><a href="#">Vinculo 3</a></li>
+        </ul>
+    </nav><!-- Seccion de pagina con enlaces -->
+    <main>
+        <!--contenido de pagina-->
+        <article id="html">
+            <!-- articulo conjunto de informacion y medios o vinculos -->
+            <section id="parrafos">
+                <h2>HTML Parrafos</h2>
+
+                <h3>Parrafos</h3>
+                <pre>public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola");
+    }
+}</pre>
+                <hr>
+
+                <p>Lorem <strong>ipsum </strong><em>dolor </em><small>sit </small>amet, consectetur adipisicing elit.
+                    Ipsam tempora voluptatibus eius nemo temporibus deserunt nesciunt dignissimos esse, illo voluptates
+                    rerum omnis quis. Similique quidem porro earum quas neque? Doloribus!
+                </p>
+
+                <blockquote>
+                    <!--Comentadio / tabulador-->
+                    El 20% del tiempo hacemos el programa.
+                    El 80% restante lo perdemos en buscar el error tonto.
+                </blockquote>
+            </section>
+            <!-- parrafos -->
+
+            <section id="listas">
+                <h3>Listas</h3>
+                <ul>
+                    <!--Lista desordenada-->
+                    <li>Lista 1</li>
+                    <li>Lista 2</li>
+                    <li>Lista 3</li>
+                </ul>
+                <ol>
+                    <!--Lista ordenada-->
+                    <li>Lista 3</li>
+                    <li>Lista 2</li>
+                    <li>Lista 1</li>
+                </ol>
+                <dl>
+                    <!--lista definicion-->
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascade Style Sheets</dd>
+                </dl>
+            </section>
+            <!-- listas -->
+
+            <section id="multimedia">
+                <h3>Multimedia</h3>
+
+                <figure>
+                    <img src="../Arch/HTML5.svg" alt="Gatico">
+                    <figcaption>Imagen Gatico</figcaption>
+                </figure>
+                <!--imagen-->
+
+                <audio src="../Arch/NYA.mp3" controls></audio>
+                <!--audio-->
+
+                <video src="../Arch/VALORANT.mp4" controls></video>
+                <!--video-->
+                
+                <div class="proporcion r16x9">
+                    <iframe src="https://www.youtube.com/embed/bGW6w0yX1yY" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <!--PAGINA WEB - video insertado con Iframe -->
+                
+                <div class="proporcion r1x1">
+                    <iframe
+                        src="https://formacion.ipartek.com" width="400" height="300">></iframe>
+                </div>
+                <!--PAGINA WEB - maps insertado con Iframe -->
+            </section>
+            <!-- Multimedia -->
+
+            <section id="tablas">
+                <h3>Tablas</h3>
+                <table>
+                    <caption>Usuarios</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th colspan="2">Datos personales</th>
+                        </tr>>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Nombre 1</td>
+                            <td>Apellido 1</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Nombre 2</td>
+                            <td>Apellido 2</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Nombre 3</td>
+                            <td>Apellido 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!-- tablas -->
+
+            <section id="formularios">
+                <h3>Formularios</h3>
+
+                <form action="https://www.google.es/search?q=">
+                    <fieldset>
+                        <legend>Busqueda en Google</legend>
+                        <input type="text" name="q" placeholder="Escribe algo">
+                        <button>Buscar en Google</button>
+                    </fieldset>
+                </form>
+                <!--Tipo Busqueda-->
+
+                <form>
+                    <fieldset>
+                        <!--Marco del formulario (o seccion)-->
+                        <legend>Datos Login</legend>
+                        <!--Titulo formulario-->
+                        <div>
+                            <!--Divicion de areas para su correcto funcionamiento-->
+                            <label for="email">Correo</label>
+                            <!--Indicador del campo de l formulario-->
+                            <input type="email" id="email">
+                        </div>
+                        <!-- Tipo email-->
+                        <div>
+                            <label for="pasword">Contraseña</label>
+                            <input type="password" id="pasword">
+                        </div>
+                        <!--Tipo contraseña-->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" required minlength="3" id="nombre" placeholder="Tu nombre">
+                        </div>
+                        <!--Tipo texto (nombre)-->
+                        <div>
+                            <label for="edad">Edad</label>
+                            <input type="number" min="18" id="edad">
+                        </div>
+                        <!--Tipo numero (edad)-->
+                        <div>
+                            <label for="fecha de nacimiento">Tu cumpleaños</label>
+                            <input type="date" id="fecha de nacimiento">
+                        </div>
+                        <!--Tipo fecha-->
+                        <div>
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora">
+                        </div>
+                        <!--Tipo hora-->
+                        <div>
+                            <label for="fecha y hora">Fecha y hora</label>
+                            <input type="datetime-local" id="fecha y hora">
+                        </div>
+                        <!--Tipo fecha y hora-->
+                        <div>
+                            <label for="profesion">Profesion</label>
+                            <select id="profesion">
+                                <option value="1">Profecion 1 </option>
+                                <option value="2">Profecion 2 </option>
+                                <option value="3">Profecion 3 </option>
+                            </select>
+                        </div>
+                        <!--Tipo Seleccion de opciones DESPLEGABLE-->
+                        <div>
+                            <label for="hobby">Hobby</label>
+                            <select id="hobby" multiple>
+                                <option value="1">Hobby 1 </option>
+                                <option value="2">Hobby 2 </option>
+                                <option value="3">Hobby 3 </option>
+                            </select>
+                        </div>
+                        <!--Tipo Seleccion de opciones varias DESPLEGABLE (CORREGIR PQ NO NO ES "OPTION")-->
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono">
+                        </div>
+                        <!--Tipo Telefono-->
+                        <div>
+                            <label for="url"></label>
+                            <input type="url" id="url">
+                        </div>
+                        <!--Tipo URL-->
+                        <div>
+                            <label for="valoracion">Valoracion</label>
+                            <input type="range" min="0" max="10" step="1" name="valoracion" id="valoracion">
+                        </div>
+                        <!--Tipo rango-->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tu nivel de Castellano</legend>
+                        <label for="basico">Basico</label>
+                        <input type="radio" id="basico" name="nivel">
+                        <label for="intermedio">Intermedio</label>
+                        <input type="radio" id="intermedio" name="nivel">
+                        <label for="alto">Alto</label>
+                        <input type="radio" id="alto" name="nivel">
+                    </fieldset>
+                    <!--Tipo Seleccion de una de las opciones Marcar casillas-->
+
+                    <fieldset>
+                        <legend>Verificaciones</legend>
+
+                        <div>
+                            <legend>Cometarios</legend>
+                            <label for="comentarios"></label>
+                            <textarea id="comentarios" cols="30" rows="10" placeholder="Escribe algo"></textarea>
+                        </div>
+                        <!--Tipo Area de escritura libre-->
+                        <div>
+                            <label for="rgpd">Terminos y condiciones</label>
+                            <input type="checkbox" id="rgpd">
+                        </div>
+                        <!--Tipo casilla de verificacion-->
+                        <div>
+                            <input type="submit" value="Guardar">
+                            <input type="reset" value="Restablecer">
+                            <button>Guardar</button>
+                        </div>
+                    </fieldset>
+                </form>>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Anuncio 1</a></li>
+                <li><a href="#">Anuncio 2</a></li>
+                <li><a href="#">Anuncio 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Anuncios-->
+    <footer>
+        <!--PIE DE PAGINA-->
+        <P>&copy; 2022 Valentina Lete</P>
+    </footer>
+</body>
+
+</html>

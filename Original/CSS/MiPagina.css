@@ -1,0 +1,412 @@
+/*GLOBALES*/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Col-vinculo: darkcyan;
+    --padding: 0.5rem;
+    --Col-fondo: white;
+    --Col-tinta: black;
+    --Col-fondo-titulo: black;
+    --Col-tinta-titulo: white;
+    --Col-fondo-secundario: darkgray;
+    --blockquote-size: 1.25rem;
+}
+
+/*Body*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--Col-tinta);
+    background-color: var(--Col-fondo);
+}
+
+a {
+    text-decoration: none;
+    /*Cursiva? Negrilla? Subrayada*/
+    color: var(--Col-vinculo);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+main, pre, h1, h2, h3, p, blockquote, ul, ol, dl, figure, form {
+    padding: var(--padding);
+}
+
+figure, audio, video, .proporcion {
+    width: 100%;
+    /*ajutes al TAMAÑO DE LA PANTALLA (horizontalmente)*/
+    border-radius: var(--padding);
+    /*redio de borde de tamaño padding*/
+    border: 1px solid var(--Col-fondo-secundario);
+    /*grosor de borde con color var*/
+    margin-bottom: cal(var(--padding)*2);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+blockquote {
+    background-color: var(--Col-fondo-secundario);
+    border-radius: var(--padding);
+    font-style: italic;
+    font-size: var(--blockquote-size);
+    line-height: calc(var(--blockquote-size) + var(--padding));
+}
+
+blockquote::before,
+blockquote::after {
+    content: "''";
+}
+
+/*ASPECTO IFRAMES*/
+.proporcion {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.proporcion.r16x9 {
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.prorcion.r1x1 {
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.proporcion>iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Header*/
+header, footer {
+    background-color: var(--Col-fondo-titulo);
+    color: var(--Col-tinta-titulo);
+    padding: var(--padding);
+    text-align: center;
+}
+
+/*Menu*/
+body>nav {
+    background-color: var(--Col-fondo-secundario);
+    text-align: center;
+}
+
+body>nav a {
+    display: inline-block;
+    color: var(--Col-tinta-titulo);
+    padding: var(--padding);
+}
+
+body>nav a:hover {
+    background-color: var(--Col-fondo-titulo);
+    text-decoration: none;
+    width: 100%;
+}
+
+/*Main*/
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--Col-fondo-secundario);
+    border-radius: var(--padding);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+main ul li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+main ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+main dt {
+    font-weight: bold;
+}
+
+main dd::before {
+    content: '- ';
+}
+
+main dd {
+    padding: var(--padding);
+}
+
+/*Multimedia*/
+#multimedia figcaption {
+    color: var(--Col-fondo-secundario);
+}
+
+/*Tablas*/
+table {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+}
+
+caption {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+thead, tfoot {
+    background-color: var(--Col-fondo-titulo);
+    color: var(--Col-tinta-titulo);
+}
+
+th {
+    font-weight: bold;
+}
+
+thead th:nth-of-type(2), thead th:nth-of-type(3), tfoot th:nth-of-type(2), tfoot th:nth-of-type(3) {
+    /*COLOR CASILLAS*/
+    text-align: left;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: var(--color-fondo-secundario);
+}
+
+td, th {
+    padding: var(--padding);
+    border: 1px solid #dfdfdf;
+}
+
+/*Formularios*/
+legend {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-bottom: var(--padding);
+}
+
+label {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+    margin-bottom: var(--padding);
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+/* Seleccionamos todas las label que están inmediatamente después de un input type="radio" */
+input[type=radio]+label {
+    width: auto;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-bottom: var(--padding);
+    border: 1px solid var(--Col-fondo-secundario);
+    background-color: var(--Col-fondo);
+    padding: var(--padding);
+    border-radius: var(--padding);
+}
+
+button, input[type=submit], input[type=reset] {
+    background-color: var(--Col-vinculo);
+}
+
+/*Aside*/
+aside {
+    background-color: var(--Col-fondo-secundario);
+}
+
+aside li {
+    padding: var(--padding);
+    text-align: center;
+}
+
+
+#Formularios div {
+    display: flex;
+}
+
+label {
+    flex-basis: 15rem;
+}
+
+input {
+    flex-grow: 1;
+}
+
+aside ul {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: red;
+    }
+
+    body>nav li {
+        display: inline-block;
+    }
+
+    #listas ul, #listas ol, #listas dl {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #multimedia>*:not(h3) {
+        float: left;
+        width: 50%;
+    }
+
+    .porcion.r16x9 {
+        padding-top: calc(56.25% / 2);
+        /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+    .porcion.r1x1 {
+        padding-top: calc(100% / 2);
+        /* 1:1 Aspect Ratio */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: cyan;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    fieldset {
+        flex-basis: 50%;
+        padding: var(--padding);
+    }
+
+    fieldset:nth-of-type(1) {
+        order: 1;
+    }
+
+    fieldset:nth-of-type(2) {
+        order: 3;
+    }
+
+    fieldset:nth-of-type(3) {
+        order: 2;
+    }
+
+    fieldset:nth-of-type(4) {
+        order: 4;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+
+    #parrafos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #parrafos>* {
+        width: 50%;
+    }
+
+    #parrafos h3 {
+        flex-basis: 100%;
+    }
+
+    #parrafos hr {
+        display: none;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        background-color: lightblue;
+    }
+
+    body>header {
+        grid-area: cabecera;
+    }
+
+    body>nav {
+        grid-area: mimenu;
+    }
+
+    body>main {
+        grid-area: principal;
+    }
+
+    body>aside {
+        grid-area: anuncios;
+    }
+
+    body>footer {
+        grid-area: pie;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 10rem;
+        grid-template-areas:
+            "cabecera cabecera"
+            "mimenu mimenu"
+            "principal anuncios"
+            "pie pie";
+    }
+
+    #parrafos {
+        grid-area: parrafos;
+    }
+
+    #listas {
+        grid-area: listas;
+    }
+
+    #multimedia {
+        grid-area: multimedia;
+    }
+
+    #formularios {
+        grid-area: formularios;
+    }
+
+    #tablas {
+        grid-area: tablas;
+    }
+
+    #html {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "parrafos tablas"
+            "listas tablas"
+            "multimedia formularios";
+    }
+}
