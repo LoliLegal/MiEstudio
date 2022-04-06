@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Act3.css">
+    <link rel="stylesheet" href="Act3/Reset.css">
+    <title>ParaLaClinicaVeterinaria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Clinica Veterinaria</h1>
+    </header>
+    <nav>
+        <ul>
+            <!--menu-->
+            <li><a href="#">Dar de alta</a></li>
+            <li><a href="#">Dar de baja</a></li>
+            <li><a href="#">Modificar</a></li>
+            <li><a href="#">Listar</a></li>
+        </ul>
+    </nav>
+    <section id="formulario de datos">
+        <h3>Tu mascota</h3>
+        <form>
+            <fieldset>
+                <label for="nombre">Dinos su nombre</label>
+                <input type="text" id="nombre">
+            </fieldset>
+            <fieldset>
+                <label for="edad">¿Que edad tiene?</label>
+                <input type="number" id="edad">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cual es su especie?</legend>
+                <label for="gato">Gato</label>
+                <input type="radio" id="gato" name="especie">
+                <label for="perro">Perro</label>
+                <input type="radio" id="perro" name="especie">
+                <label for="hamster">Hamster</label>
+                <input type="radio" id="hamster" name="especie">
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="especie">
+            </fieldset>
+            <fieldset>
+                <label for="raza">¿Cual es su raza?</label>
+                <select>
+                    <option value="3">Multirraza</option>
+                    <option value="1">Pura sangre</option>
+                    <option value="2">Criollo</option>
+                    <option value="3">Otros</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="vacunas">Posee vacunas</label>
+                <input type="checkbox" id="vacunas">
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
