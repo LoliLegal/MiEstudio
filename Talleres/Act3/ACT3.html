@@ -4,61 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Act3.css">
-    <link rel="stylesheet" href="Act3/Reset.css">
-    <title>ParaLaClinicaVeterinaria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Para La Clinica Veterinaria</title>
 </head>
 
-<body>
-    <header>
-        <h1>Clinica Veterinaria</h1>
-    </header>
-    <nav>
-        <ul>
-            <!--menu-->
-            <li><a href="#">Dar de alta</a></li>
-            <li><a href="#">Dar de baja</a></li>
-            <li><a href="#">Modificar</a></li>
-            <li><a href="#">Listar</a></li>
-        </ul>
-    </nav>
-    <section id="formulario de datos">
-        <h3>Tu mascota</h3>
-        <form>
-            <fieldset>
-                <label for="nombre">Dinos su nombre</label>
-                <input type="text" id="nombre">
-            </fieldset>
-            <fieldset>
-                <label for="edad">¿Que edad tiene?</label>
-                <input type="number" id="edad">
-            </fieldset>
-            <fieldset>
-                <legend>¿Cual es su especie?</legend>
-                <label for="gato">Gato</label>
-                <input type="radio" id="gato" name="especie">
-                <label for="perro">Perro</label>
-                <input type="radio" id="perro" name="especie">
-                <label for="hamster">Hamster</label>
-                <input type="radio" id="hamster" name="especie">
-                <label for="otro">Otro</label>
-                <input type="radio" id="otro" name="especie">
-            </fieldset>
-            <fieldset>
-                <label for="raza">¿Cual es su raza?</label>
-                <select>
-                    <option value="3">Multirraza</option>
-                    <option value="1">Pura sangre</option>
-                    <option value="2">Criollo</option>
-                    <option value="3">Otros</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <label for="vacunas">Posee vacunas</label>
-                <input type="checkbox" id="vacunas">
-            </fieldset>
-        </form>
-    </section>
+<body class="container-fluid">
+    <div class="row justify-content-center">
+        <header>
+            <h1>Clinica Veterinaria</h1>
+        </header>
+        <nav class=" navbar navbar-expand-lg navbar-light bg-danger bg-gradient sticky-top h4 flex-column">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TU CLINICA VETERINARIA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Dar de alta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dar de baja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Modificar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Listar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="formulario_de_datos">
+
+            <form class="row">
+                <fieldset>
+                    <legend>Tu mascota</legend>
+                    <div>
+                        <label class="form-label" for="nombre">Nombre</label>
+                        <input class="form-control" type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label class="form-label" for="edad">¿Que edad tiene?</label>
+                        <input class="form-control" type="number" id="edad">
+                        <div>
+                            <label>¿Cual es su especie?</label><br>
+                            <input class="form-check-input" type="radio" id="gato" name="especie">
+                            <label for="gato">Gato</label>
+                            <input class="form-check-input" type="radio" id="perro" name="especie">
+                            <label for="perro">Perro</label>
+                            <input class="form-check-input" type="radio" id="hamster" name="especie">
+                            <label for="hamster">Hamster</label>
+                            <input class="form-check-input" type="radio" id="otro" name="especie">
+                            <label for="otro">Otro</label>
+                        </div>
+                        <div>
+                            <label class="form-label" for="raza">¿Cual es su raza?</label>
+                            <select class="form-select" id="raza">
+                                <option value="3">Multirraza</option>
+                                <option value="1">Pura sangre</option>
+                                <option value="2">Criollo</option>
+                                <option value="3">Otros</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-check-label" for="vacunas">Posee vacunas</label><br>
+                            <input class="form-check-input" type="checkbox" id="vacunas">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer  ></footer>
+            <p class="bg-danger bg-gradient">&copy; 2022 Valentina Montes</p>
+        </footer>
+    </div>
 </body>
 
 </html>
