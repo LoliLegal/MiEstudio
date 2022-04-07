@@ -11,16 +11,26 @@
 
 }
 
-header.encabezado_logo {
-    position: absolute;
+header {
+    width: 100%;
 }
 
 .encabezado_fondo {
-    position: fixed;
-    width: 90%;
-    left: 0px;
-    top: 0px;
+    position: static;
+    width: 100%;
 }
+
+.encabezado_logo {
+    position: absolute;
+    width: 23%;
+}
+
+.btn {
+    justify-content: flex-end;
+    background-color: var(--Col-Ver);
+    justify-content: end;
+}
+
 nav {
     background-color: var(--Col-Ver);
     text-decoration: none;
@@ -34,11 +44,14 @@ body>nav a {
     padding: var(--Padding);
 
 }
+
 body>nav a:hover {
     background-color: var(--Col-Bar);
     color: var(--Col-Cla);
     font-weight: bold;
+
 }
-body{
+
+body {
     background-image: url(../imagenes/);
 }
