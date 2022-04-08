@@ -1,70 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/css.css">
     <title>Orbela</title>
 </head>
 
-<body>
-    <header>
-        <div>
-            <img src="imagenes/logo_encabezado.png" class="encabezado_logo">
+<body class="col-sm-12">
+    <div class="container-fluid">
+        <div id="cabezera">
+            <header>
+                <div>
+                    <img src="imagenes/logo_encabezado.png" class="encabezado_logo">
+                </div>
+                <div style="text-align: center">
+                    <button type="button" style="position: absolute;top: 10px" class="btn">ES</button>
+                    <button type="button" style="position: absolute;top: 10px" class="btn">EU</button>
+                </div>
+            </header>
         </div>
-        <div>
-            <img src="imagenes/fondo_encabezado.png" class="encabezado_fondo">
+        <div id="menu">
+            <nav>
+                <!--Barra de navegacion / separacion a lo largo de la dispocicion /-->
+                <ul>
+                    <!--menu-->
+                    <a href="#">SOMOS ORBELA</a>
+                    <a href="#">NUESTROS PROYECTOS</a>
+                    <a href="#">ESTAMOS AQUI</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">ES</a>
+                    <a href="#">EN</a>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <button type="button" class="btn justify-content-md-end">ES</button>
-    <button type="button" class="btn justify-content-md-end">EU</button>
+        <div id="portada">
+            <article id="cuerpo">
+                <div class="col-sm-10">
+                    <textarea style="text-align:center position-relative"
+                        class="form-control">"Sed ut perspiciatis undo omnis isto natus error sit voluptatem accusantium dolorwmque laudantiem"</textarea>
+                </div>
+            </article>
+        </div>
 
-    <nav>
-        <!--Barra de navegacion / separacion a lo largo de la dispocicion /-->
-        <ul>
-            <!--menu-->
-            <a href="#">SOMOS ORBELA</a>
-            <a href="#">NUESTROS PROYECTOS</a>
-            <a href="#">ESTAMOS AQUI</a>
-            <a href="#">BLOG</a>
-            <a href="#">ES</a>
-            <a href="#">EN</a>
-        </ul>
-    </nav>
-    <main>
-        <article id="portada">
-            <section>
-                <imag src="Ejercicio Página Web/imagenes/">
-            </section>
-            <section id="parrafo imagen">
-                <P>Sed ut perspiciatis undo omnis isto natus error sit voluptatem accusantium dolorwmque laudantiem</P>
-            </section>
-            <section id="parrafo imagen">
-                <p>Te damos la bienvenida a nuestra web.</p>
-                <p>Somos ORBELA, una empresa de servicios en los ambitos del medio ambiente, la cultura, el ocio y el
-                    turismo.</p>
-                <p>Tenemos infinidad de experiencias que nos hacen diferentes y que nos gustaria compartir contigo.</p>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <p>SOMOS ORBELA NUESTROS PROYECTOS ESTAMOS AQUI BLOG</p>
-        <!--ESTO SON BOTONES?-->
-        <P>Mapa web | Avisp legal | Politica de privacidad</P>
-        <P>&copy; Orbela 2012</P>
-        <P>JON ARROSPIDE 11, 1º Local 9 - 48014 BILBAO (BIZKAIA)</P>
-        <img src="EjercicioPag/imagenes/logo_encabezado">
-        <img src="Ejercicio/imagenes/hojarasca.jpg" alt="">
-        <P>Tfono: 944 16 80 20</P>
-        <P>Email: orbela@orbela.com</P>
-    </footer>
+        <div class="btn-group btn-group-justified">
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">2</button>
+            <button type="button" class="btn">3</button>
+            <button type="button" class="btn">4</button>
+            <button type="button" class="btn">5</button>
+            <button type="button" class="btn">6</button>
+            <button type="button" class="btn">7</button>
+            <button type="button" class="btn">8</button>
+            <button type="button" class="btn">9</button>
+
+        </div>
+        <p>Te damos la bienvenida a nuestra web.</p>
+        <p>Somos ORBELA, una empresa de servicios en los ambitos del medio ambiente, la cultura, el ocio
+            y
+            el
+            turismo.</p>
+        <p>Tenemos infinidad de experiencias que nos hacen diferentes y que nos gustaria compartir
+            contigo.
+        </p>
+        </main>
+        <footer>
+            <p>SOMOS ORBELA NUESTROS PROYECTOS ESTAMOS AQUI BLOG</p>
+            <!--ESTO SON BOTONES?-->
+            <P>Mapa web | Avisp legal | Politica de privacidad</P>
+            <P>&copy; Orbela 2012</P>
+            <P>JON ARROSPIDE 11, 1º Local 9 - 48014 BILBAO (BIZKAIA)</P>
+            <img src="EjercicioPag/imagenes/logo_encabezado">
+            <img src="Ejercicio/imagenes/hojarasca.jpg" alt="">
+            <P>Tfono: 944 16 80 20</P>
+            <P>Email: orbela@orbela.com</P>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -4,14 +4,19 @@
 
 :root {
     --Col-Cla: #F6F7D5;
+    --Col-Sec: #666816;
     --Col-Ver: #9EA123;
-    --Col-Sec: #35360b;
     --Col-Bar: #E4E682;
     --Padding: 0.75rem;
 
 }
 
-header {
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+
+#cabezera {
     width: 100%;
 }
 
@@ -21,37 +26,51 @@ header {
 }
 
 .encabezado_logo {
-    position: absolute;
-    width: 23%;
+    position: sticky;
+    left: 10px;
+}
+header{
+    background-image: url(../imagenes/fondo_encabezado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 .btn {
-    justify-content: flex-end;
     background-color: var(--Col-Ver);
-    justify-content: end;
+    position: fixed;
 }
 
-nav {
-    background-color: var(--Col-Ver);
+#menu {
+    background-color: var(--Col-Sec);
     text-decoration: none;
     font-weight: 100%;
 }
 
-body>nav a {
+#menu a {
     display: inline-block;
     color: var(--Col-Cla);
     text-decoration: none;
     padding: var(--Padding);
-
 }
 
-body>nav a:hover {
+#menu a:hover {
     background-color: var(--Col-Bar);
     color: var(--Col-Cla);
+    opacity: 65%;
     font-weight: bold;
 
 }
 
-body {
-    background-image: url(../imagenes/);
+#portada {
+    background-image: url(../imagenes/aad065e29dd3ee097703622257856275.jpg );
+    opacity: 90%;
+    background-position: center;
+}
+
+.form-control {
+    color: var(--Col-Sec);
+    background: var(--Col-Cla);
+    border-style: none;
+    width: 462px;
 }
